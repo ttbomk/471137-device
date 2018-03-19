@@ -8,13 +8,14 @@
 
     <header class="page-header">
 
-      <h1 class="visually-hidden">DEVICE — интернет-магазин экспериментальных гаджетов</h1>
+      <h1 class="visually-hidden"><span lang="en">DEVICE</span> — интернет-магазин экспериментальных гаджетов</h1>
 
-      <a class="logo header-logo" href="#" title="DEVICE">DEVICE</a>
+      <a class="logo header-logo" href="#" lang="en">DEVICE</a>
 
       <div class="header-items">
-        <form class="search" method="POST0" action="https://echo.htmlacademy.ru">
-          <input type="search" placeholder="Поиск по сайту">
+        <form class="search-item" method="POST" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="search-term">Поиск по сайту</label>
+          <input id="search-term" type="search" placeholder="Поиск по сайту">
           <button class="submit" type="submit">Найти</button>
         </form>
         <div class="user-block">
@@ -59,15 +60,15 @@
             <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="button" href="">Подробнее</a>
             <table class="device-parameters">
-              <tr class="device-parameters-value">
+              <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
                 <td>Карбон</td>
               </tr>
-              <tr class="device-parameters-name">
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
+              <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
               </tr>
             </table>
           </li>
@@ -78,11 +79,11 @@
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="button" href="">Подробнее</a>
             <table class="device-parameters">
-              <tr class="device-parameters-value">
+              <tr>
                 <td>48 часов</td>
               </tr>
-              <tr class="device-parameters-name">
-                <td>Без подзарядки</td>
+              <tr>
+                <th>Без подзарядки</th>
               </tr>
             </table>
           </li>
@@ -93,13 +94,13 @@
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="button" href="">Подробнее</a>
             <table class="device-parameters">
-              <tr class="device-parameters-value">
+              <tr>
                 <td>800 м</td>
                 <td>50 м</td>
               </tr>
-              <tr class="device-parameters-name">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
+              <tr>
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
               </tr>
             </table>
           </li>
@@ -107,7 +108,7 @@
       </section>
 
       <section class="popular">
-        <h2 class="visually-hidden">Популярные категории товаров</h2>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="popular-list">
           <li class="popular-item">
             <a href="#">
@@ -175,16 +176,16 @@
         <h2 class="visually-hidden">Компании с которыми мы сотрудничаем</h2>
         <ul class="brands-list">
           <li class="brands-item">
-            <img src="img/brand-1.png" width="260" height="100" alt="Логотип компании">
+            <img src="img/brand-1.png" width="260" height="100" alt="DJI">
           </li>
           <li class="brands-item">
-            <img src="img/brand-2.png" width="260" height="100" alt="Логотип компании">
+            <img src="img/brand-2.png" width="260" height="100" alt="SP Gadgets">
           </li>
           <li class="brands-item">
-            <img src="img/brand-3.png" width="260" height="100" alt="Логотип компании">
+            <img src="img/brand-3.png" width="260" height="100" alt="GoPro">
           </li>
           <li class="brands-item">
-            <img src="img/brand-4.png" width="260" height="100" alt="Логотип компании">
+            <img src="img/brand-4.png" width="260" height="100" alt="VIVE">
           </li>
         </ul>
       </section>
@@ -212,7 +213,7 @@
     <footer class="page-footer">
       <div class="footer-row-top">
 
-        <a class="logo footer-logo" href="#" title="DEVICE">DEVICE</a>
+        <a class="logo footer-logo" href="#" lang="en">DEVICE</a>
 
         <div class="footer-user-block">
           <a class="user-link user-link-login" href="#">Войти</a>
@@ -232,18 +233,39 @@
       <div class="page-footer-bottom">
         <ul class="social-icons">
           <li class="social-icons-item">
-            <a href="#" class="facebook"> Фэйсбук </a>
+            <a href="#" class="facebook">Фейсбук</a>
           </li>
           <li class="social-icons-item">
-            <a href="#" class="instagram"> Инстаграм </a>
+            <a href="#" class="instagram">Инстаграм</a>
           </li>
           <li class="social-icons-item">
-            <a href="#" class="twitter"> Твиттер </a>
+            <a href="#" class="twitter">Твиттер</a>
           </li>
         </ul>
-        <a class="htmlacademy-logo" href="http://htmlacademy.ru"></a>
+        <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
       </div>
     </footer>
 
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="text" name="email" placeholder="email@example.com">
+        <label for="text">Текст письма:</label>
+        <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2>Адрес магазина</h2>
+      <img src="img/map-big.jpg" width="900" height="559" alt="Адрес магазина" longdesc="
+      address-info">
+      <p id="address-info" class="visually-hidden">Адрес магазина: город Москва, улица Строителей, дом 15</p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
