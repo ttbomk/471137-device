@@ -10,21 +10,21 @@
   </head>
   <body>
 
-    <header class="page-header container-width">
+    <header class="page-header container">
 
       <h1 class="visually-hidden"><span lang="en">DEVICE</span> — интернет-магазин экспериментальных гаджетов</h1>
       <a class="logo header-logo" href="#" lang="en">DEVICE</a>
 
-      <div class="header-row">
+      <div class="row">
         <form class="search-item" method="POST" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search-term">Поиск по сайту</label>
           <input id="search-term" type="search" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="user-block">
-          <li class="user-login hidden"><a href="#">Войти</a></li>
-          <li class="user-profile"><a href="#">Валентин Петухов</a></li>
-          <li class="user-logout"><a href="#">Выйти</a></li>
+          <li class="user-login"><a href="#">Войти</a></li>
+          <li class="user-profile hidden"><a href="#">Валентин Петухов</a></li>
+          <li class="user-logout hidden"><a href="#">Выйти</a></li>
         </ul>
         <ul class="shop-block">
           <li class="shop-compare"><a href="#">Сравнить</a></li>
@@ -32,12 +32,12 @@
         </ul>
       </div>
 
-      <div class="header-row">
+      <div class="row">
         <nav class="main-nav">
           <ul class="header-nav">
             <li class="header-nav-sub">
               <a class="catalog-link" href="#">Каталог товаров</a>
-              <ul class="catalog-nav container-width">
+              <ul class="catalog-nav">
 
                 <li class="catalog-group">
                   <ul>
@@ -73,7 +73,7 @@
 
     <main class="page-main">
 
-      <section class="home-slider container-width">
+      <section class="home-slider container">
         <h2 class="visually-hidden">Самые популярные товары</h2>
 
         <ul class="slides-list">
@@ -146,7 +146,7 @@
         </ul>
       </section>
 
-      <section class="popular container-width">
+      <section class="popular container">
         <h2 class="visually-hidden">Категории популярных товаров</h2>
         <ul class="popular-list">
           <li class="popular-item">
@@ -159,7 +159,7 @@
           </li>
           <li class="popular-item">
             <a href="#">
-              <h3>Моноподы для селфи</h3>
+              <h3>Моноподы<br> для селфи</h3>
               <span>
                 <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
               </span>
@@ -202,7 +202,7 @@
 
       <section class="services">
         <h2 class="visually-hidden">Предоставляемые услуги</h2>
-        <div class="services-container container-width">
+        <div class="services-container container">
           <ul class="services-list">
             <li><a class="button button-active" href="#">Доставка</a></li>
             <li><a class="button" href="#">Гарантия</a></li>
@@ -215,7 +215,7 @@
             </li>
             <li class="services-description-item services-warranty">
               <h3>Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
             </li>
             <li class="services-description-item services-credit">
               <h3>Кредит</h3>
@@ -225,7 +225,7 @@
         </div>
       </section>
 
-      <section class="brands container-width">
+      <section class="brands container">
         <h2 class="visually-hidden">Компании с которыми мы сотрудничаем</h2>
         <ul class="brands-list">
           <li class="brands-item">
@@ -247,7 +247,7 @@
         </ul>
       </section>
 
-      <div class="two-column-wrapper container-width">
+      <div class="two-column-wrapper container">
         <section class="about">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -270,7 +270,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="footer-row container-width">
+      <div class="footer-row container">
         <a class="logo footer-logo" href="#" lang="en">DEVICE</a>
 
         <ul class="user-block">
@@ -283,7 +283,7 @@
           <li class="shop-basket"><a href="#">Корзина</a></li>
         </ul>
       </div>
-      <div class="footer-row container-width">
+      <div class="footer-row container">
         <p>г. Москва, ул. Строителей, 15</p>
         <ul class="footer-nav-list">
           <li><a href="#">Доставка</a></li>
@@ -292,7 +292,8 @@
         </ul>
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
-      <div class="footer-row container-width">
+      <div class="footer-row container">
+        <div class="dec-line"></div>
         <ul class="social-icons">
           <li class="social-icons-item">
             <a href="#" class="facebook">Фейсбук</a>
@@ -304,28 +305,47 @@
             <a href="#" class="twitter">Твиттер</a>
           </li>
         </ul>
-        <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
+        <a class="htmlacademy-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
       </div>
     </footer>
 
-    <section class="modal modal-write-us hidden">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST">
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-        <label for="email">Ваш e-mail:</label>
-        <input id="email" type="text" name="email" placeholder="email@example.com">
-        <label for="text">Текст письма:</label>
-        <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
+    <div class="container">
+      <section class="modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <div>
+          <img src="img/map-big.jpg" width="960" height="559" alt="Магазин расположен по адресу г. Москва, ул. Строителей, 15">
+        </div>
+        <button class="modal-map-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
 
-    <section class="modal modal-map hidden">
-      <h2 class="visually-hidden">Адрес магазина</h2>
-      <img src="img/map-big.jpg" width="900" height="559" alt="Адрес магазина: город Москва, улица Строителей, дом 15">
-      <button class="modal-close" type="button">Закрыть</button>
+      </section>
+    </div>
+
+
+    <section class="modal-feedback">
+
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+
+      <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+        <label class="feedback-user-name" for="feedback-user-name">Ваше имя:</label>
+
+        <label class="feedback-email" for="feedback-email">Ваш e-mail:</label>
+
+        <input type="text" name="user-name" id="feedback-user-name" value="" placeholder="Имя Фамилия" required>
+
+        <input type="email" name="email" id="feedback-email" value="" placeholder="email@example.com" required>
+
+        <label class="feedback-field" for="feedback-field">Текст письма:</label>
+
+        <textarea name="feedback-field" id="feedback-field" rows="10" placeholder="В свободной форме" required></textarea>
+
+        <button class="btn-modal-feedback" type="submit" value="Отправить"></button>
+      </form>
+
+      <button class="modal-feedback-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>
