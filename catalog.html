@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.style.css">
 
     <title>HTML Academy: Девайс</title>
   </head>
@@ -13,7 +13,7 @@
     <header class="page-header container">
 
       <h1 class="visually-hidden"><span lang="en">DEVICE</span> — интернет-магазин экспериментальных гаджетов</h1>
-      <a class="logo header-logo" href="#" lang="en">DEVICE</a>
+      <a class="logo header-logo" href="index.html" lang="en">DEVICE</a>
 
       <div class="row">
         <form class="search-item" method="POST" action="https://echo.htmlacademy.ru">
@@ -22,9 +22,9 @@
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="user-block">
-          <li class="user-login"><a href="#">Войти</a></li>
-          <li class="user-profile hidden"><a href="#">Валентин Петухов</a></li>
-          <li class="user-logout hidden"><a href="#">Выйти</a></li>
+          <li class="user-login hidden"><a href="#">Войти</a></li>
+          <li class="user-profile"><a href="#">Валентин Петухов</a></li>
+          <li class="user-logout"><a href="#">Выйти</a></li>
         </ul>
         <ul class="shop-block">
           <li class="shop-compare"><a href="#">Сравнить</a></li>
@@ -76,9 +76,15 @@
       <header class="page-title container">
         <h2>Моноподы для селфи</h2>
         <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Каталог товаров</a></li>
-          <li class="breadcrumbs-current">Моноподы для селфи</li>
+          <li>
+            <a class="breadcrumbs-items" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a class="breadcrumbs-items" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-current">
+            <a class="breadcrumbs-items">Моноподы для селфи</a>
+          </li>
         </ul>
       </header>
 
@@ -145,7 +151,7 @@
             <ul class="sorting-type">
 
               <li>
-                <a class="sorting-items-price">По цене</a>
+                <a class="sorting-items-price active">По цене</a>
               </li>
               <li>
                 <a class="sorting-items-type" href="#">По типу</a>
@@ -181,7 +187,7 @@
                 <a class="catalog-item" href="#">Любительская селфи-палка</a>
                 <b>500 руб.</b>
               </p>
-              <a class="to-basket" href="#">
+              <a class="to-basket button" href="#">
                 В корзину
               </a>
               <a class="to-compared" href="#">Добавить к сравнению</a>
@@ -194,7 +200,7 @@
                 <a class="catalog-item" href="#">Профессиональная селфи-палка</a>
                 <b>1 500 руб.</b>
               </p>
-              <a class="to-basket" href="#">
+              <a class="to-basket button" href="#">
                 В корзину
               </a>
               <a class="to-compared" href="#">Добавить к сравнению</a>
@@ -207,7 +213,7 @@
                 <a class="catalog-item" href="#">Непотопляемая селфи-палка</a>
                 <b>2 500 руб.</b>
               </p>
-              <a class="to-basket" href="#">
+              <a class="to-basket button" href="#">
                 В корзину
               </a>
               <a class="to-compared" href="#">Добавить к сравнению</a>
@@ -220,7 +226,7 @@
                 <a class="catalog-item" href="#">Селфи-палка «Следуй за мной»</a>
                 <b>4 900 руб.</b>
               </p>
-              <a class="to-basket" href="#">
+              <a class="to-basket button" href="#">
                 В корзину
               </a>
               <a class="to-compared" href="#">Добавить к сравнению</a>
@@ -249,12 +255,12 @@
 
     <footer class="page-footer">
       <div class="footer-row container">
-        <a class="logo footer-logo" href="#" lang="en">DEVICE</a>
+        <a class="logo footer-logo" href="index.html" lang="en">DEVICE</a>
 
         <ul class="user-block">
-          <li class="user-login"><a href="#">Войти</a></li>
-          <li class="user-profile hidden"><a href="#">Валентин Петухов</a></li>
-          <li class="user-logout hidden"><a href="#">Выйти</a></li>
+          <li class="user-login hidden"><a href="#">Войти</a></li>
+          <li class="user-profile"><a href="#">Валентин Петухов</a></li>
+          <li class="user-logout"><a href="#">Выйти</a></li>
         </ul>
         <ul class="shop-block">
           <li class="shop-compare"><a href="#">Сравнить</a></li>

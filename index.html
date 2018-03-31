@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.style.css">
 
     <title>HTML Academy: Девайс</title>
   </head>
@@ -36,7 +36,7 @@
         <nav class="main-nav">
           <ul class="header-nav">
             <li class="header-nav-sub">
-              <a class="catalog-link" href="#">Каталог товаров</a>
+              <a class="catalog-link" href="catalog.html">Каталог товаров</a>
               <ul class="catalog-nav">
 
                 <li class="catalog-group">
@@ -76,6 +76,11 @@
       <section class="home-slider container">
         <h2 class="visually-hidden">Самые популярные товары</h2>
 
+        <ul class="slide-controls">
+          <li class="slide-control active"></li>
+          <li class="slide-control"></li>
+          <li class="slide-control"></li>
+        </ul>
         <ul class="slides-list">
           <li class="slide-item slide-current">
             <h3 class="visually-hidden">Профессиональная селфи-палка</h3>
@@ -148,54 +153,24 @@
 
       <section class="popular container">
         <h2 class="visually-hidden">Категории популярных товаров</h2>
-        <ul class="popular-list">
-          <li class="popular-item">
-            <a href="#">
-              <h3>Виртуальная реальность</h3>
-              <span>
-                <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-              </span>
-            </a>
+        <ul class="categories">
+          <li>
+            <a class="categories-items item-1" href="catalog.html">Виртуальная реальность</a>
           </li>
-          <li class="popular-item">
-            <a href="#">
-              <h3>Моноподы<br> для селфи</h3>
-              <span>
-                <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-              </span>
-            </a>
+          <li>
+            <a class="categories-items item-2" href="catalog.html"><span class="item-2-wrapper">Моноподы для селфи</span></a>
           </li>
-          <li class="popular-item">
-            <a href="#">
-              <h3>Экшн-камеры</h3>
-              <span>
-                <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
-              </span>
-            </a>
+          <li>
+            <a class="categories-items item-3" href="catalog.html">Экшн-камеры</a>
           </li>
-          <li class="popular-item">
-            <a href="#">
-              <h3>Фитнес-браслеты</h3>
-              <span>
-                <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-              </span>
-            </a>
+          <li>
+            <a class="categories-items item-4" href="catalog.html">Фитнес-браслеты</a>
           </li>
-          <li class="popular-item">
-            <a href="#">
-              <h3>Умные часы</h3>
-              <span>
-                <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
-              </span>
-            </a>
+          <li>
+            <a class="categories-items item-5" href="catalog.html">Умные часы</a>
           </li>
-          <li class="popular-item">
-            <a href="#">
-              <h3>Квадрокоптеры</h3>
-              <span>
-                <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
-              </span>
-            </a>
+          <li>
+            <a class="categories-items item-6" href="catalog.html">Квадракоптеры</a>
           </li>
         </ul>
       </section>
