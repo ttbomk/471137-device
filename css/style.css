@@ -2247,6 +2247,21 @@ button.modal-feedback-close::after {
   z-index: 10;
 }
 
+.map-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.modal-map .iframe {
+  position: relative;
+  z-index: 20;
+  border: none;
+}
+
 .modal-map-show {
   display: block;
   animation-name: bounce;
