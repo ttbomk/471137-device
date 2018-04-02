@@ -2,19 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/min.style.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
+
   <body>
 
     <header class="page-header container">
-
       <h1 class="visually-hidden"><span lang="en">DEVICE</span> — интернет-магазин экспериментальных гаджетов</h1>
       <a class="logo header-logo" href="#" lang="en">DEVICE</a>
-
       <div class="row">
         <form class="search-item" method="POST" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search-term">Поиск по сайту</label>
@@ -31,14 +28,12 @@
           <li class="shop-basket"><a href="#">Корзина</a></li>
         </ul>
       </div>
-
       <div class="row">
         <nav class="main-nav">
           <ul class="header-nav">
             <li class="header-nav-sub">
               <a class="catalog-link" href="catalog.html">Каталог товаров</a>
               <ul class="catalog-nav">
-
                 <li class="catalog-group">
                   <ul>
                     <li><a href="#">Виртуальная реальность</a></li>
@@ -46,20 +41,17 @@
                     <li><a href="#">Экшн-камеры</a></li>
                   </ul>
                 </li>
-
                 <li class="catalog-group">
                   <ul>
                     <li><a href="#">Фитнес-браслеты</a></li>
                     <li><a href="#">Умные часы</a></li>
                   </ul>
                 </li>
-
                 <li class="catalog-group">
                   <ul>
                     <li><a href="#">Квадрокоптеры</a></li>
                   </ul>
                 </li>
-
               </ul>
             </li>
             <li><a href="#">Доставка</a></li>
@@ -68,14 +60,12 @@
           </ul>
         </nav>
       </div>
-
     </header>
 
     <main class="page-main">
 
       <section class="home-slider container">
         <h2 class="visually-hidden">Самые популярные товары</h2>
-
         <ul class="slide-controls">
           <li class="slide-control active"></li>
           <li class="slide-control"></li>
@@ -219,6 +209,7 @@
       </section>
 
       <div class="two-column-wrapper container">
+
         <section class="about">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -230,6 +221,7 @@
           </ul>
           <a class="button" href="#">Подробнее о нас</a>
         </section>
+
         <section class="contact">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -238,47 +230,49 @@
           </a>
           <a class="button modal-link" href="#">Напишите нам</a>
         </section>
+
       </div>
 
     </main>
 
     <footer class="page-footer">
-      <div class="footer-row container">
-        <a class="logo footer-logo" href="#" lang="en">DEVICE</a>
-
-        <ul class="user-block">
-          <li class="user-login"><a href="#">Войти</a></li>
-          <li class="user-profile hidden"><a href="#">Валентин Петухов</a></li>
-          <li class="user-logout hidden"><a href="#">Выйти</a></li>
-        </ul>
-        <ul class="shop-block">
-          <li class="shop-compare"><a href="#">Сравнить</a></li>
-          <li class="shop-basket"><a href="#">Корзина</a></li>
-        </ul>
-      </div>
-      <div class="footer-row container">
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="footer-nav-list">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-      </div>
-      <div class="footer-row container">
-        <div class="dec-line"></div>
-        <ul class="social-icons">
-          <li class="social-icons-item">
-            <a href="#" class="facebook">Фейсбук</a>
-          </li>
-          <li class="social-icons-item">
-            <a href="#" class="instagram">Инстаграм</a>
-          </li>
-          <li class="social-icons-item">
-            <a href="#" class="twitter">Твиттер</a>
-          </li>
-        </ul>
-        <a class="htmlacademy-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
+      <div class="container">
+        <div class="row">
+          <a class="logo footer-logo" href="#" lang="en">DEVICE</a>
+          <ul class="user-block">
+            <li class="user-login yellow-icon"><a href="#">Войти</a></li>
+            <li class="user-profile yellow-icon hidden"><a href="#">Валентин Петухов</a></li>
+            <li class="user-logout hidden"><a href="#">Выйти</a></li>
+          </ul>
+          <ul class="shop-block">
+            <li class="shop-compare yellow-icon"><a href="#">Сравнить</a></li>
+            <li class="shop-basket yellow-icon"><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-nav-list">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <div class="row">
+          <div class="dec-line"></div>
+          <ul class="social-icons">
+            <li class="social-icons-item">
+              <a href="#" class="facebook">Фейсбук</a>
+            </li>
+            <li class="social-icons-item">
+              <a href="#" class="instagram">Инстаграм</a>
+            </li>
+            <li class="social-icons-item">
+              <a href="#" class="twitter">Твиттер</a>
+            </li>
+          </ul>
+          <a class="htmlacademy-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Академия</a>
+        </div>
       </div>
     </footer>
 
@@ -288,36 +282,27 @@
         <img src="img/map-big.jpg" width="960" height="559" alt="Магазин расположен по адресу г. Москва, ул. Строителей, 15">
       </div>
       <button class="modal-map-close" type="button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
 
     <section class="modal-feedback">
-
       <h2 class="visually-hidden">Форма обратной связи</h2>
-
       <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
         <label class="feedback-user-name" for="feedback-user-name">Ваше имя:</label>
-
         <label class="feedback-email" for="feedback-email">Ваш e-mail:</label>
-
         <input type="text" name="user-name" id="feedback-user-name" value="" placeholder="Имя Фамилия" required>
-
         <input type="email" name="email" id="feedback-email" value="" placeholder="email@example.com" required>
-
         <label class="feedback-field" for="feedback-field">Текст письма:</label>
-
         <textarea name="feedback-field" id="feedback-field" rows="10" placeholder="В свободной форме" required></textarea>
-
         <button class="btn-modal-feedback" type="submit" value="Отправить"></button>
       </form>
-
       <button class="modal-feedback-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
 
     <script src="js/modal.js"></script>
+
   </body>
 </html>
