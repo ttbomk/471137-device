@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Девайс</title>
+</head>
+<body>
+  <section class="modal-feedback modal-feedback-show">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+      <label class="feedback-user-name" for="feedback-user-name">Ваше имя:</label>
+      <label class="feedback-email" for="feedback-email">Ваш e-mail:</label>
+      <input type="text" name="user-name" id="feedback-user-name" value="" placeholder="Имя Фамилия">
+      <input type="email" name="email" id="feedback-email" value="" placeholder="email@example.com">
+      <label class="feedback-field" for="feedback-field">Текст письма:</label>
+      <textarea name="feedback-field" id="feedback-field" rows="10" placeholder="В свободной форме"></textarea>
+      <button class="btn-modal-feedback" type="submit" value="Отправить"></button>
+    </form>
+  </section>
+</body>
+</html>
