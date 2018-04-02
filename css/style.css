@@ -64,21 +64,14 @@ body {
   background-color: #ffffff;
 }
 
-input,
-textarea {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Open Sans", Arial, sans-serif;
-}
-
-a{
+a {
   color: #000000;
   text-decoration: none;
 }
 
-h1,
-h2,
-h3 {
+.page-main h1,
+.page-main h2,
+.page-main h3 {
   margin: 0;
   font-size: 47px;
   line-height: 48px;
@@ -1438,7 +1431,7 @@ a.htmlacademy-button:active {
   background-color: #000000;
 }
 
-fieldset p {
+.filter-container p {
   margin: 0;
   padding: 0;
 }
@@ -2142,7 +2135,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-field,
-textarea {
+.feedback-field + textarea {
   width: 760px;
 }
 
@@ -2151,7 +2144,7 @@ textarea {
   padding-left: 1px;
 }
 
-textarea {
+.feedback-form textarea {
   height: 130px;
   padding: 10px 0;
   padding-left: 18px;
